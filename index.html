@@ -3,76 +3,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SPL@T Landing</title>
-  <style>
-    body {
-      background-color: #000000;
-      color: #ffffff;
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-    }
-    h1 {
-      color: #9f1d22;
-      font-size: 3rem;
-      margin-bottom: 0.5em;
-    }
-    p {
-      font-size: 1.2rem;
-      margin: 0.5em 0;
-    }
-    .beta-tag {
-      background: #9f1d22;
-      color: white;
-      padding: 0.5em 1em;
-      border-radius: 5px;
-      font-weight: bold;
-      margin-top: 1em;
-    }
-    /* SPL@T GoFundMe Section */
-.splat-gofundme-section {
-  background-color: #000000;
-  padding: 4rem 1rem;
-  text-align: center;
-}
-
-.splat-gfm-wrapper {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 2rem;
-  background: linear-gradient(145deg, #0b0b0b, #1a1a1a);
-  border: 2px solid #8B0000;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-}
-
-.gfm-embed iframe {
-  border-radius: 8px;
-  border: none;
-}
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SPL@T - No Shame. Just SPL@T.</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div style="text-align: center; margin-top: 40px;">
-  <img src="logo.png" alt="SPL@T Logo" style="max-width: 500px; width: 100%; height: auto;">
-</div>
-  <h1>No Shame. Just SPL@T.</h1>
-  <p>Welcome to the launch zone—where cruising meets chaos and connection drips with intention.</p>
-  <p>Beta Access: <span class="beta-tag">By Invitation Only</span></p>
-  <section class="splat-gofundme-section">
-  <div class="splat-gfm-wrapper">
-    <div class="gfm-embed" data-url="https://www.gofundme.com/f/splt-is-coming-help-us-build-it-bold-raw-real/widget/large?sharesheet=undefined&attribution_id=sl:c04cf0a6-b71a-4f86-bd01-6f6db89e1636"></div>
-  </div>
-</section>
+  <section class="hero">
+    <h1>No Shame. Just <span class="splat-logo">SPL@T</span>.</h1>
+    <p>Raw. Real. Queer. Connection.</p>
+    <a href="#donate" class="cta-button">💥 Help Launch SPL@T</a>
+  </section>
 
-<script defer src="https://www.gofundme.com/static/js/embed.js"></script>
-  <p style="margin-top:2em; font-size: 0.9rem; color: #888;">© 2025 SPL@T App</p>
+  <section class="progress">
+    <h2>We’re Already Building It…</h2>
+    <ul>
+      <li>✅ Branding locked and logo finalized</li>
+      <li>✅ Firebase backend + GitHub setup</li>
+      <li>✅ Signup, login, and chat stubbed out</li>
+      <li>🌍 Location grid + SP@T map cruising coming next</li>
+    </ul>
+  </section>
+
+  <section id="donate" class="donate">
+    <h2>Support the Movement</h2>
+    <div class="gfm-embed" data-url="https://www.gofundme.com/f/splt-is-coming-help-us-build-it-bold-raw-real/widget/large?sharesheet=undefined&attribution_id=sl:c04cf0a6-b71a-4f86-bd01-6f6db89e1636"></div>
+    <script defer src="https://www.gofundme.com/static/js/embed.js"></script>
+  </section>
 </body>
 </html>
