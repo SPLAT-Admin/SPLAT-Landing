@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SPL@T – Bold, Uninhibited Queer Connections. No shame. Just SPL@T." />
   <title>SPL@T – Coming Soon</title>
   <link rel="icon" href="/splat_favicon_clean.ico" type="image/x-icon">
   <style>
@@ -43,29 +44,27 @@
       font-size: 1.2rem;
       color: #FFFFFF;
     }
-    .highlight {
-      font-size: 1.4rem;
-      margin-top: 0.5rem;
-    }
     .section {
       padding: 3rem 2rem;
       max-width: 800px;
       margin: 0 auto;
-      text-align: center;
     }
     .section h2 {
       color: #D80D27;
       margin-bottom: 1rem;
+    }
+    .cta {
+      background: #D80D27;
+      padding: 2rem;
+      text-align: center;
+      color: #FFF;
+      font-weight: bold;
     }
     footer {
       background: #D80D27;
       text-align: center;
       padding: 2rem;
       font-size: 0.9rem;
-    }
-    @keyframes pulse {
-      from { opacity: 1; transform: scale(1); }
-      to { opacity: 0.6; transform: scale(1.05); }
     }
   </style>
 </head>
@@ -75,7 +74,6 @@
     <p>No Shame. Just SPL@T.</p>
   </header>
   <nav>
-    <a href="/index.html">Home</a>
     <a href="/founder.html">Founder Sale</a>
     <a href="/ambassadors.html">Ambassadors</a>
     <a href="/merch.html">Merch</a>
@@ -84,60 +82,23 @@
 
   <section class="hero">
     <h1>🔥 Founder Sale – Limited Time</h1>
-    <p class="highlight">
-      <strong style="color: #0A0A0A;">7</strong> HOURS /
-      <span style="color: #FFFFFF;">$</span><strong style="color: #0A0A0A;">25</strong> /
-      <strong style="color: #0A0A0A;">25</strong><span style="color: #FFFFFF;">0</span> ONLY
-    </p>
-    <h2 id="countdown" style="margin-top: 2rem; font-size: 2rem; animation: pulse 1.5s infinite alternate ease-in-out;">Loading countdown...</h2>
-    <script>
-      function updateCountdown() {
-        const launchTime = new Date("July 25, 2025 10:00:00 MST").getTime();
-        const now = new Date().getTime();
-        const distance = launchTime - now;
-
-        if (distance < 0) {
-          document.getElementById("countdown").innerHTML = "The Founder Sale is live! 💥";
-          return;
-        }
-
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        document.getElementById("countdown").innerHTML = `⏳ ${days}d ${hours}h ${minutes}m ${seconds}s until flash sale`;
-      }
-
-      updateCountdown();
-      setInterval(updateCountdown, 1000);
-    </script>
+    <p><strong>First 250 only:</strong> SPL@T Premium Lifetime Membership for just $25. No renewals. No monthly charges. Ever.</p>
+    <p>After 250 are gone, price jumps to $50 until the 7-hour window ends.</p>
+    <p>Live July 25 @ 10 a.m. MST</p>
   </section>
 
   <section class="section">
-    <div id="cta-buttons" style="display: none; margin-bottom: 3rem;">
-      <h2>Claim Your Lifetime Access</h2>
-      <button onclick="window.location.href='https://your-stripe-checkout-url-25.com'" style="background-color:#D80D27; color:#FFFFFF; padding:1rem 2rem; margin:1rem; border:none; border-radius:6px; font-size:1.1rem; cursor:pointer;">💥 Founder Tier 1 – $25</button>
-      <button onclick="window.location.href='https://your-stripe-checkout-url-50.com'" style="background-color:#D80D27; color:#FFFFFF; padding:1rem 2rem; margin:1rem; border:none; border-radius:6px; font-size:1.1rem; cursor:pointer;">🔥 Founder Tier 2 – $50</button>
-    </div>
-    <script>
-      const showAt = new Date("July 25, 2025 10:00:00 MST").getTime();
-      const checkTime = () => {
-        const now = new Date().getTime();
-        if (now >= showAt) {
-          document.getElementById("cta-buttons").style.display = "block";
-        }
-      };
-      checkTime();
-      setInterval(checkTime, 10000);
-    </script>
-
     <h2>We’re almost live.</h2>
     <p>Android build is nearly done. Beta testing launches soon!</p>
   </section>
 
+  <section class="cta">
+    Help fund SPL@T’s launch — <a href="https://gofundme.com/your-fund" style="color:#FFFFFF; text-decoration:underline;">Support the Fundraiser</a>
+  </section>
+
   <footer>
     <p>&copy; 2025 SPLAT, LLC • <a href="https://usesplat.com" style="color:#FFFFFF">usesplat.com</a></p>
+    <p>Want to sponsor a SP@T location or SPL@T LIVE event? Ask us about our upcoming sponsorship deck.</p>
   </footer>
 </body>
 </html>
