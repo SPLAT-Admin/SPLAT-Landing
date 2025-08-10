@@ -25,3 +25,7 @@ Grid: Heating up.
 ---
 
 **Join us, or get left clean.**  
+
+### Development
+
+Install dependencies with `npm install`. The build relies on the `lightningcss` package, which must be included in production dependencies to compile styles correctly.
