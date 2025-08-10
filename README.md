@@ -25,3 +25,9 @@ Grid: Heating up.
 ---
 
 **Join us, or get left clean.**  
+
+### Development
+
+Install dependencies with `npm install`. The build relies on the `lightningcss` package, which must be included in production dependencies to compile styles correctly.
+
+Static site assets reside in the public/ directory so Vercel can serve them without a build step.
